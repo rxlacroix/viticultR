@@ -4,14 +4,14 @@
 \alias{viti_diffuserad}
 \title{Compute diffuse radiation interception coefficient}
 \usage{
-viti_diffuserad(height, thickness, interrow_width, porosity)
+viti_diffuserad(height, thickness, interrow_spacing, porosity)
 }
 \arguments{
 \item{height}{The foliage height in meters}
 
 \item{thickness}{The vineyard row thickness in meters}
 
-\item{interrow_width}{The vineyard interrow width in meters}
+\item{interrow_spacing}{The vineyard interrow width in meters}
 
 \item{porosity}{The vine porosity (0<x<1)}
 }
@@ -22,5 +22,5 @@ The diffuse radiation interception coefficient
 This function returns celestial longitude from a date
 }
 \examples{
-viti_diffuserad(height = 1.4, thickness = 0.7, interrow_width = 2.4, porosity = 0.1)
+viti_diffuserad(height = 1.4, thickness = 0.7, interrow_spacing = 2.4, porosity = 0.1)
 }

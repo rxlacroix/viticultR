@@ -5,7 +5,7 @@
 \title{Compute solar radiation analysis of a vine location at a date}
 \usage{
 vitirad(lat, lon, date, tz, leaf_albedo, ground_albedo, height, thickness,
-  interrow_width, porosity, row_aspect)
+  interrow_spacing, porosity, row_aspect)
 }
 \arguments{
 \item{lat}{The latitude in decimal degrees}
@@ -24,7 +24,7 @@ vitirad(lat, lon, date, tz, leaf_albedo, ground_albedo, height, thickness,
 
 \item{thickness}{The vineyard row thickness in meters}
 
-\item{interrow_width}{The vineyard interrow width in meters}
+\item{interrow_spacing}{The vineyard interrow spacing in meters}
 
 \item{porosity}{The vine porosity (0<x<1)}
 
@@ -40,5 +40,5 @@ This function returns equation of from a date and the plot of the radiations
 vitirad(lat = 43.5, lon = 4.7,
         date = "2019-05-30", tz = "CET", leaf_albedo = 0.22,
         ground_albedo = 0.18, height = 1.4, thickness = 0.7,
-        interrow_width = 2.4, porosity = 0.1, row_aspect = 0)
+        interrow_spacing = 2.4, porosity = 0.1, row_aspect = 0)
 }
