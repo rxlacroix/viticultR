@@ -1,6 +1,6 @@
 # viticultR
 
-========================================================
+
 
 Librement adapté de Riou, Valancogne & Pieri (1989).
 
