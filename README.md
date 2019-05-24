@@ -2,7 +2,7 @@
 
 
 
-Librement adapté de Riou, Valancogne & Pieri (1989) avec le concours de J.-C. Payan (IFV) et V. Bécart (Syndicat des Vignerons des Côtes du Rhône)
+Free adaptation of Riou, Valancogne & Pieri (1989) with the assistance of J.-C. Payan (IFV) and V. Bécart (Syndicat des Vignerons des Côtes du Rhône)
 
 
 
