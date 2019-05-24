@@ -9,7 +9,7 @@
 #' @param ground_albedo The ground albedo
 #' @param height The foliage height in meters
 #' @param thickness The vineyard row thickness in meters
-#' @param interrow_width The vineyard interrow width in meters
+#' @param interrow_spacing The vineyard interrow spacing in meters
 #' @param porosity The vine porosity (0<x<1)
 #' @param row_aspect The row aspect (0 : NS, 90 : EW, -45 : NW-SE)
 #' @importFrom magrittr "%>%"
@@ -19,13 +19,13 @@
 #' vitirad(lat = 43.5, lon = 4.7,
 #'         date = "2019-05-30", tz = "CET", leaf_albedo = 0.22,
 #'         ground_albedo = 0.18, height = 1.4, thickness = 0.7,
-#'         interrow_width = 2.4, porosity = 0.1, row_aspect = 0)
+#'         interrow_spacing = 2.4, porosity = 0.1, row_aspect = 0)
 
-vitirad <- function(lat, lon, date, tz, leaf_albedo, ground_albedo, height, thickness, interrow_width, porosity, row_aspect) {
+vitirad <- function(lat, lon, date, tz, leaf_albedo, ground_albedo, height, thickness, interrow_spacing, porosity, row_aspect) {
 
   date <- as.Date(date) # date d'entree
 
-  rEcartRangs <- interrow_width # ecartement entre rangs
+  rEcartRangs <- interrow_spacing # ecartement entre rangs
   rHautMax <- height # hauteur feuillee
   rLargMax <- thickness # largeur des rangs
   rPorositeMin <- porosity # porosite
@@ -71,7 +71,7 @@ vitirad <- function(lat, lon, date, tz, leaf_albedo, ground_albedo, height, thic
   # '       rKdif,  rayonnement venant du ciel et rKdifSol, rayonnement venant du sol
 
 
-  rKdif <- viti_diffuserad(height = rHautMax, thickness = rLargMax, interrow_width = rEcartRangs, porosity = rPorositeMin)
+  rKdif <- viti_diffuserad(height = rHautMax, thickness = rLargMax, interrow_spacing = rEcartRangs, porosity = rPorositeMin)
   rKdifSol <- rKdif
 
   #       calcul des taux d'absorption (cardif) et de reflexion (crrdif) du rayt.diffus
