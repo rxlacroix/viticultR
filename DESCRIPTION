@@ -1,0 +1,11 @@
+Package: viticultR
+Title: Functions for viticulture analysis
+Version: 0.1.0
+Authors@R: person("Romain", "Lacroix", email = "romain.lacroix@free.fr", role = c("aut", "cre"))
+Description: This package performs a radiation analysis of a vine plot.  
+Depends: R (>= 3.5.0)
+License: GPL
+Encoding: UTF-8
+LazyData: true
+Imports: suncalc, solrad, lubridate, scales, reshape2, magrittr, dplyr, ggplot2
+RoxygenNote: 6.1.1
